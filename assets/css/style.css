@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+*{
+    box-sizing: border-box;
+}
 /*###############################
 SCROLL BAR
 ################################ */
@@ -16,7 +18,7 @@ SCROLL BAR
     border-radius: 100vw;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(247, 214, 29);
+    background-color: rgb(255, 196, 0);
     border: solid .1em #dcdcdc;
     border-radius: 100vw;
 }
@@ -26,13 +28,196 @@ LAYOUT
 ################################ */
 
 body{
-    background-color: #dcdcdc;
+    background-color: #dfdfdfcb;
 }
 
-.container{
-    margin-left: 15rem;
-    margin-right: 15rem;
+
+header{
     display: flex;
-    gap: 3rem;
+    justify-content: space-between;
+    position: -webkit-sticky;
+    background-color: rgb(255, 196, 0);
+    border: 1em solid rgb(255, 196, 0);
+}
+
+.navbar{
+    
+}
+.logo{
+    
+}
+.nav-list{
+   list-style: none;
+   display: flex;
+}
+.nav-items{
+        margin: 0 1.5em;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.current-page{
+    /* border-bottom: 1px solid black; */
+}
+
+nav a:hover{
+    color: #fff;
+}
+/* ############################
+styling
+############################ */
+
+.section1{
+    display: flex;
+    max-width: 100%;;
+    
+}
+.leftbox{
+    /* margin: 5em;
+    width: 20em; */
+    /* border: 2px solid black; */
+    margin: 3em;
+    display: flex;
     flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.leftbox h1{
+    text-align: center;
+}
+.title{
+    color: rgb(255, 196, 0);
+}
+.section1 p,h1,a{
+    margin-bottom: 1em;
+}
+
+.button{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 0.4em;
+    border: 1px solid black;
+    border-radius: .4em;
+}
+.project-btn{
+    background-color: rgb(255, 196, 0);
+    border: 1px solid rgb(255, 196, 0);
+}
+
+.rightbox{
+    width: 30em;
+}
+img{
+    width: 100%;
+    
+}
+.section2{
+    margin-top: 5em;
+}
+.box{
+    display: flex;
+    margin: 0 10em;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+
+}
+.box div{
+    width: 50%;
+    
+}
+.button3{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: .4em;
+    margin-top: 5em;
+}
+.button3:hover{
+    background-color: #dfdfdfcb;
+}
+
+.button5{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: .4em;
+    margin-top: 5em;
+}
+.button5:hover{
+    background-color: #dfdfdfcb;
+}
+
+.button4{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: .4em;
+    margin-top: 5em;
+}
+.button4:hover{
+    background-color: #dfdfdfcb;
+}
+.projec1-left{
+    display: flex;
+    flex-direction: column;
+}
+.projec1-left  h1, p,a{
+    margin-bottom: 5em;
+    margin-left: 3em;
+}
+
+.section2-heading, .box1-heading, .box2-heading, .box3-heading{
+    text-align: center;
+}
+
+.section3-heading{
+    text-align: center;
+}
+.social{
+    width: 5%;
+    display: flex;
+    margin-top: 2rem;
+
+}
+.social img{
+    width: 33.33%;
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9em;
+}
+.send{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    padding: 0.4em;
+    background-color: rgb(255, 196, 0);
+    border: 1px solid rgb(255, 196, 0);
+    border-radius: .4em;
+    margin-top: 2em;
+}
+form{
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+#name, #email, #message{
+    border-radius: .5em;
+    width: 20em;
+    height: 2em;
+}
+#message{
+    height: 5em;
 }
