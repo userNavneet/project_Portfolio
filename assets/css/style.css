@@ -184,7 +184,7 @@ img{
 .social{
     width: 5%;
     display: flex;
-    margin-top: 2rem;
+    margin-top: 5rem;
 
 }
 .social img{
@@ -220,4 +220,7 @@ form{
 }
 #message{
     height: 5em;
+}
+footer img{
+    height: 9em;
 }
