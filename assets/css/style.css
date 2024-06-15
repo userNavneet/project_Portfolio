@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*###############################
+SCROLL BAR
+################################ */
+::-webkit-scrollbar{
+    width: .5em;
+    background-color: #dcdcdc;
+}
+::-webkit-scrollbar-track{
+    background-color: #dcdcdc;
+    margin-block: .5em;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(247, 214, 29);
+    border: solid .1em #dcdcdc;
+    border-radius: 100vw;
+}
+
+/*###############################
+LAYOUT
+################################ */
+
+body{
+    background-color: #dcdcdc;
+}
+
+.container{
+    margin-left: 15rem;
+    margin-right: 15rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+}
